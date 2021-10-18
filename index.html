@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="center">
+      <div class="header"></div>
+      <div class="profile">
+        <div id="cover-photo"></div>
+        <div class="profile-image">
+          <div id="profile-image-left"></div>
+          <div class="profile-image-right">
+            <button id="follow-button" type="button" onclick="followBtnText()">
+              Following
+            </button>
+          </div>
+        </div>
+        <div class="profile-details"></div>
+      </div>
+
+      <div class="tab-container">
+        <div class="selector">
+          <div class="tab tab-active">Tweets</div>
+          <div class="tab">Tweets & Replies</div>
+          <div class="tab">Media</div>
+          <div class="tab">Likes</div>
+        </div>
+        <div class="content">
+          <div class="content-body show-active" id="Tweets"></div>
+          <div class="content-body" id="Tweets & Replies"></div>
+          <div class="content-body" id="Media"></div>
+          <div class="content-body" id="Likes"></div>
+        </div>
+      </div>
+      <div id="tweet-container"></div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
